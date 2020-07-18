@@ -1,9 +1,7 @@
-;格式化，返回OutputVar变量
 ;存储到剪切板
 ;Ctrl-v粘贴
 
 ^3::
-FormatTime, OutputVar , YYYYMMDDHH24MISS, yyyy-MM-dd  hh:mm:ss +0800
-clipboard = %OutputVar%
+clipboard = %A_YYYY%-%A_MM%-%A_DD% %A_Hour%:%A_Min%:%A_Sec% +0800
 send, ^v
 return
