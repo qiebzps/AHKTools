@@ -5,3 +5,8 @@
 clipboard = %A_YYYY%-%A_MM%-%A_DD% %A_Hour%:%A_Min%:%A_Sec% +0800
 send, ^v
 return
+
+^2::
+clipboard = %A_YYYY%-%A_MM%-%A_DD%-
+send, ^v
+return
